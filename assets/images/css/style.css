@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap'); /* Fonte copiada do google fonts  */
+
+body {
+    font-family: 'Open Sans', sans-serif; /* fonte copiada do google fonts  */
+    margin: 0; /* Para a faixa verde ficar em toda a tela sem espaçamento */
+   
+}
+
+header .line { /* Para formatar a faixa verde do header */ 
+    background-color: #117050;
+    height: 10px; 
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto; /* Para o logo e todo o conteúdo do header ficar no meio */ 
+    
+}
+
+.header--area { /* Formatando a div pai e ativando o display flex  */ 
+    display: flex;
+    justify-content: space-between; /* Para dar espaço entre o logo e o lado direito */ 
+    height: 100px;
+    align-items: center;
+}
+
+.header-left img { /* Formatando o logo starbucks  */ 
+    width: 64px;
+    height: 64px;
+}
+
+.header--search input { /* Formatando a parte do campo de pesquisa  */ 
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999999;
+    outline: 0; /* Para não ficar com a borda preta quando passar o mouse  */ 
+    width: 100%; /* TAMANHO GERAL DA LARGURA DA PESQUISA  */
+    max-width: 220px; /* TAMANHO MINIMO DA LARGURA DA PESQUISA */ 
+}
+
+.header--search form { /* Para a lupa ficar do lado da barra de pesquisa */ 
+    display: flex;
+}
+
+.header--right { /* Ativar a div pai do flex para o menu ficar do lado do quadro de pesquisa */ 
+    display: flex;
+    align-items: center;
+}
+
+.header--search button { /* BORDA ONDE ESTÁ A LUPA */
+    border: 0;  /* Tirar a borda do desenho da lupa */
+    background-color: transparent; /* deixar sem senuma cor de fundo  */ 
+    margin-left: -30px; /* Para a lupa entrar na caixa de pesquisa */
+    cursor: pointer; /* Para deixar a lupa como clicálvel quando passar o mouse  */ 
+
+}
+
+.header--search button img { /* tamanho da lupa  */ 
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu { /* formatar a div da parte de menu  */ 
+    margin-left: 50px; /* espaçamento da lupa e barra de pesquisa  */ 
+    cursor: pointer; /* Deixar a parte de menu clicável quando passar o mouse  */ 
+}
+
+.header--menu img { /* Tamanho e largura do desenho das parte de pesquisa  */ 
+    height: 24px;
+    width: 24px;
+}
+
+.banner {
+    background-image: url('../bg.jpg');
+    background-position: center; /* ficar centralizado  */ 
+    background-size: cover; /* pegar a área disponível */
+    padding-top: 90px; /* Para baixar mais o banner de fundo */
+    padding-bottom: 90px; /* Para ajudar a aparecer mais a foto do banner */
+}
+
+.banner h1 {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 100px; /* Para juntar e separar as linhas de texto */
+    margin: 0; /* Para tirar a margem no h1 e ficar mais pra cima */
+    margin-bottom: 30px;
+}
+
+.banner-images img { /*Formatanto as 3 imagens */
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;  
+    margin-top: 60px; /* Espaçamento nas fotos de cima */
+    margin-right: 40px; /* espaçamento nas fotos do lado */ 
+}
+
+.area1 { /* Ativando o grid da div pai area1  */
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content {
+  padding: 80px;
+}
+
+.area1--img1 { /* configurar a imagem dos copos escrito gaga */ 
+    background-color: green;
+    height: 350px;
+    background-image: url(../f2.jpg); /* colocando a imagem */ 
+    background-size: cover;
+    background-position: center;
+}
+
+.area1--img2 { /* configurar a imagem da mulher segurando o copo  */ 
+    grid-column: 2 / 3; /* Ajeitando a ordem grid */
+    grid-row: 1 / 3; /* Ajeitando a ordem grid */
+    background-image: url('../f1.jpg'); /* colocando a imagem  */ 
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.bar { /* configurando a barra verde em cima do texto  */
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+
+h2 { /* configurando o texto h2 */ 
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    line-height: 45px;
+    margin: 20px 0; /* para dar mais espaçamento no texto do h2 */ 
+}
+
+.area1--quote {  /* Espaçamento da área da frase Lady Gaga */ 
+    margin-bottom: 30px;
+
+}
+
+.button { /* formatando o botão  */ 
+   border: 2px solid #454545; 
+   display: inline-block;
+   padding: 10px 30px;
+   border-radius: 3px;
+   color: #454545;
+   text-decoration: none;
+
+}
+
+.button:hover{ /* efeito para quando passar o mouse */ 
+    color: #fff;
+    background-color: #454545;
+}
+
+.area1--text { /* formatando a parte do texto */ 
+    margin-bottom: 50px; /* espaçamento em baixo do texto  */ 
+    line-height: 25px; /* espaçamento entre linhas  */ 
+}
+
+
+.area2 { /* Ativando o grid da div pai area1  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+ 
+ .area2--content {
+   padding: 80px;
+ }
+ 
+ .area2--img1 { /* configurar a imagem dos copos escrito gaga */ 
+     background-color: green;
+     height: 450px;
+     background-image: url(../f4.jpg); /* colocando a imagem */ 
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .area2--img2 { /* configurar a imagem da mulher segurando o copo  */ 
+     grid-column: 1 / 2; /* Ajeitando a ordem grid */
+     grid-row: 1 / 3; /* Ajeitando a ordem grid */
+     background-image: url('../f3.jpg'); /* colocando a imagem  */ 
+     background-size: cover;
+     background-position: center;
+ 
+     
+ }
+
+
+.area2--text { /* formatando a parte do texto */ 
+    margin-bottom: 50px; /* espaçamento em baixo do texto  */ 
+    line-height: 25px; /* espaçamento entre linhas  */ 
+}
+
+
+.area3 { /* Ativando o grid da div pai area1  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+ 
+ .area3--content {
+   padding: 250px 80px;
+   background-image: url('../bg2.jpg');
+   background-size: cover;
+   background-position: left;
+ }
+
+ .area3--text { /* formatando a parte do texto */ 
+    margin-bottom: 50px; /* espaçamento em baixo do texto  */ 
+    line-height: 25px; /* espaçamento entre linhas  */ 
+}
+ 
+ .area3--img1 { 
+     background-image: url(../f5.jpg); /* colocando a imagem */ 
+     background-size: cover;
+     background-position: center;
+ }
+
+ .area4 {
+     display: grid;
+     grid-template-columns: 450px 1fr;
+     background-color: #e8e9ee;
+ }
+
+ .area4--content {
+     padding: 150px 80px;
+ }
+
+ .area4--text {
+    margin-bottom: 50px; /* espaçamento em baixo do texto  */ 
+    line-height: 25px;
+ }
+
+ .area4--img1 {
+    background-image: url(../bg3.jpg); /* colocando a imagem */ 
+    background-position: left;
+ }
+
+ .area5 { /* Formatando a área5 */ 
+    background-image: url(../bg4.jpg); /* colocando a imagem */ 
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+ }
+
+ footer { /* Formatando a parte do footer */ 
+     background-color: #333;
+     color: #fff;
+     padding: 80px;
+     text-align: center;
+ }
+
+/* RESPONSIVIDADE DO SITE  */ 
+
+
+@media (min-width:769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media (max-width: 425px) { /* responsividade para celular  */ 
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .header--surch input {
+        max-width: 80px;
+
+    }
+
+    .banner h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner-images img { /*Formatanto as 3 imagens */
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        border-radius: 50%;  
+        margin-right: 10px; /* espaçamento nas fotos do lado */ 
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr; /* Só vai ter uma coluna  */ 
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content {
+        padding: 40px;
+    }
+
+    .area5 {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 40px 20px; /* 40px na altura e 20px na largura*/ 
+    }
+
+
+}
